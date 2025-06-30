@@ -4,4 +4,4 @@ MyAuthProvider.key
 .env
 basic_sso_auth
 MyAuthProvider
-./idea
+./idea/

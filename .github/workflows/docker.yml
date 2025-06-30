@@ -93,7 +93,9 @@ jobs:
       # Pull in the repository code
       - name: Checkout the repository
         uses: actions/checkout@v4 # ref: https://github.com/marketplace/actions/checkout
-
+          # update names to lowercase
+      - name: Lowercase the container image name
+        run: echo "AGENT_IMAGE_NAME=${AGENT_IMAGE_NAME,,}" >> ${GITHUB_ENV}
       - name: Update package.json version
         uses: jossef/action-set-json-field@v2.1
         with:
