@@ -108,7 +108,7 @@ func initializeSAMLSP(authName string, serverName string) error {
 
 /*
 `my_auth_config` is used to determine the name of the file that has the ADFS metadata to use for SSO.
-`MyAuthProvider.crt` and `MyAuthProvider.key` are generated and used for ADFS as well.
+`SSO.crt` and `SSO.key` are generated and used for ADFS as well.
 */
 func Initialize() {
 	authName := "SSO"
