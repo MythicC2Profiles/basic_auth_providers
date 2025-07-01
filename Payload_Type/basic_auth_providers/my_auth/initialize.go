@@ -23,6 +23,8 @@ import (
 	"time"
 )
 
+const version = "1.0.0"
+
 var samlSP *samlsp.Middleware
 
 func loadConfig() (map[string]string, error) {
@@ -109,10 +111,10 @@ func initializeSAMLSP(authName string, serverName string) error {
 `MyAuthProvider.crt` and `MyAuthProvider.key` are generated and used for ADFS as well.
 */
 func Initialize() {
-	authName := "MyAuthProvider"
+	authName := "SSO"
 	myAuth := authstructs.AuthDefinition{
 		Name:           authName,
-		Description:    "A custom Auth Provider for ADFS",
+		Description:    fmt.Sprintf("A custom Auth Provider for SSO Identity Providers. Version %s", version),
 		IDPServices:    []string{"ADFS"},
 		NonIDPServices: []string{},
 		OnContainerStartFunction: func(message sharedStructs.ContainerOnStartMessage) sharedStructs.ContainerOnStartMessageResponse {

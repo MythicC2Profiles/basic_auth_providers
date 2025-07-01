@@ -1,8 +1,7 @@
 metadata.xml
-MyAuthProvider.crt
-MyAuthProvider.key
+SSO.crt
+SSO.key
 .env
 basic_sso_auth
-MyAuthProvider
-./idea/
+SSO
 .idea/
