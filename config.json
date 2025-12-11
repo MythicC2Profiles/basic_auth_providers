@@ -5,6 +5,6 @@
   "exclude_documentation_c2": false,
   "exclude_agent_icons": false,
   "remote_images": {
-    "basic_auth_providers": "ghcr.io/mythicc2profiles/basic_auth_providers:v0.0.3"
+    "basic_auth_providers": "ghcr.io/mythicc2profiles/basic_auth_providers:v0.0.4"
   }
 }
